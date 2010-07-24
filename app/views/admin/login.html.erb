@@ -1,0 +1,21 @@
+<title>login page</title>
+<h1>Login</h1>
+
+<div class="centercontent">
+	<% form_tag do %>
+		<fieldset class='login'>
+			<legend>Please Log In</legend>
+			<div class="input">
+				<label for="name">Name:</label>
+				<%= text_field_tag :name, params[:name], :class => 'textbox' %>
+			</div>
+			<div class="input">
+				<label for="password">Password:</label>
+				<%= password_field_tag :password, params[:password], :class => 'textbox' %>
+			</div>
+			<div>
+				<%= submit_tag "Login" %>
+			</div>
+		</fieldset>
+	<% end %>
+</div>

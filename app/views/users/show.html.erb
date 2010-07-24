@@ -1,0 +1,17 @@
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<p>
+  <b>Hashed password:</b>
+  <%=h @user.hashed_password %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%=h @user.salt %>
+</p>
+
+<button type='button' onclick="javascript:location='<%= edit_user_path(@user) %>';" >Edit</button>
+<button type='button' onclick='cancel()'>Cancel</button>

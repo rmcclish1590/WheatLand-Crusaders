@@ -1,0 +1,14 @@
+<h1>Gratitude</h1>
+<table>
+	<thead>
+		<td>Thank you for your donations!</td>
+	</thead>
+	<tbody>
+		<td>
+			<% @donators.each do |d| %>
+				d.name
+			<% end %>
+		</td>
+	</tbody>
+</table>
+

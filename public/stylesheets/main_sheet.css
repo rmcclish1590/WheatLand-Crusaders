@@ -1,0 +1,88 @@
+@import url('common.css');
+
+html, body {
+	height:auto;	
+}
+
+body {
+	margin:0px auto auto auto;
+	vertical-align:top;
+	background-color:#666666;
+	width:800px;
+}
+
+div.header{
+	background-image: url('../images/Header.png');
+	width:100%;
+	height:110px;
+	margin:0px auto auto auto;
+	background-repeat:no-repeat;
+	padding:0;
+}
+
+div.body{
+	width:100%;
+	height:auto;
+	background-image: url('../images/RepeatTire.png');
+	background-repeat:repeat-y;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+div.footer{
+	background-image: url('../images/TireFooter.png');
+	height:84px;
+	width:100%;
+	text-align:center;
+	float:left;
+}
+
+div.leftcontent{
+	padding-left:50px;
+	height:auto;
+	width:60%;
+	float:left;
+}
+
+div.rightcontent{
+	height:auto;	
+	width:30%;
+	float:right;
+}
+
+div.contactus{
+	width:80%;
+	margin:auto;
+	text-align:right;
+	
+}
+
+div.contactus div{
+	margin:10px;
+}
+
+.sideimages{
+	float:right;
+	padding-right:20px;
+}
+
+hr{
+	width:80%;
+	
+}
+
+h1{
+	text-align:center;
+}
+
+label{
+	text-align:left;
+	float:left;
+}
+
+textarea{
+	width:180px;
+	height:100px;
+}
+

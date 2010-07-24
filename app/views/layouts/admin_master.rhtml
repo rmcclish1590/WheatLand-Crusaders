@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+		<%= stylesheet_link_tag 'admin_sheet' %>
+		<%= javascript_include_tag 'application' %>
+	</head>
+	<body>
+		<div class='header'><img src='/images/TopLogo.png' alt='Header not found'></div>
+		<div class='body'><%= yield %></div>	
+		<div class='footer'>
+			<ul>
+				<li><%= link_to 'Home',{ :controller => 'home'}, :class => 'footer' %></li>
+				<% if session[:user_id] %>
+					<li><%= link_to 'Logout',{ :controller => 'admin', :action => 'logout'}, :class => 'footer' %></li>				
+				<% else %>
+					<li><%= link_to 'Login',{ :controller => 'admin', :action => 'login'}, :class => 'footer' %></li>
+				<% end %>
+				<li><%= link_to 'Users',{ :controller => 'users', :action => 'index'}, :class => 'footer' %></li>
+				<li><%= link_to 'Pages',{ :controller => 'pages', :action => 'index'}, :class => 'footer' %></li>
+			</ul>
+		</div>
+	</body>
+</html>

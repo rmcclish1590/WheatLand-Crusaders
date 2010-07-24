@@ -1,0 +1,25 @@
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+<fieldset class='login'>
+	<legend>Edit user settings</legend>
+  <div class='input'>
+    <%= f.label :name, 'Name:' %>
+    <%= f.text_field :name, :class => 'textbox' %>
+  </div>
+  <div class='input'>
+    <%= f.label :password, 'Password:' %>
+    <%= f.password_field :password, :class => 'textbox' %>
+  </div>
+  <div class='input'>
+    <%= f.label :password_confirmation, 'Confirm:' %>
+    <%= f.password_field :password_confirmation, :class => 'textbox' %>
+  </div>
+  <div>
+    <%= f.submit 'Update' %>
+	<button type='button' onclick='cancel()'>Cancel</button>
+  </div>
+</fieldset>
+<% end %>
+

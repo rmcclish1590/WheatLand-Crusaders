@@ -1,0 +1,20 @@
+
+<body>
+	<div class='contactus'>
+		<p style='width:50%; float:left;'>
+			<label>Name:</label>
+			<%= text_field_tag :name, params[:name] %><br/>
+	
+			<label>Email:</label>
+			<%= text_field_tag :email, params[:email] %><br/>
+	
+			<label>Comments:</label>
+			<%= text_area_tag :comments, params[:comments] %>
+		</p>
+		<p>
+			<img src='/images/AllAroundTheTable.jpg' alt='Image not found' class='sideimages'>
+		</p>
+	</div>
+	
+</body>
+

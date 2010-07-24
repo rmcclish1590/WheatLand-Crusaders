@@ -1,0 +1,17 @@
+<div>
+  <b>Title:</b>
+  <%=h @page.title %>
+</div>
+
+<div>
+  <b>Content:</b>
+  <%=h @page.content %>
+</div>
+
+<div>
+  <b>Link:</b>
+  <%=h @page.link %>
+</div>
+
+<button type='button' onclick="javascript:location='<%= edit_page_path(@page) %>';" >Edit</button>
+<button type='button' onclick='cancel()'>Cancel</button>

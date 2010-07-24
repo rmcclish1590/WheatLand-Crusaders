@@ -1,0 +1,9 @@
+<h1>Donors</h1>
+
+<ol>
+	<% @donors.each do |d| %>
+	<li>d.name</li>
+	<% end %>
+</ol>
+
+<button type='button' onclick='javascript:location="/donators/edit"'>Edit</button>

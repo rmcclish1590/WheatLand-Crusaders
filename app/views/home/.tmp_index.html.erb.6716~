@@ -1,0 +1,10 @@
+<div class='leftcontent'>
+	<h1><%= @page.title %></h1>
+	
+	<p><%= @page.content %></p>
+</div>
+<div class='rightcontent'>
+	<img src="/images/ThirdSideImage200px.png" alt="Image not Found!" class="sideimages" />
+	<img src="/images/FourthSideImage200px.png" alt="Image not Found!" class="sideimages" />
+	<img src="/images/SecondSideImage200px.png" alt="Image not Found!" class="sideimages" />
+</div>

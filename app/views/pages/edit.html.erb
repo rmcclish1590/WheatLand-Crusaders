@@ -1,0 +1,23 @@
+<h1>Edit page</h1>
+
+<% form_for(@page) do |f| %>
+  <%= f.error_messages %>
+
+  <div>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </div>
+  <div>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </div>
+  <div>
+    <%= f.submit 'Update' %>
+	<button type='button' onclick="cancel()">Cancel</button>
+  </div>
+<% end %>
+

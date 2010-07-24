@@ -1,0 +1,23 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+	<th colspan=3>Actions</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%=h user.name %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+	<% if user.id > 1%>
+    	<td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+	<% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<button type='button' onclick="javascript:location='<%= new_user_path %>';" >New user</button>
