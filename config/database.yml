@@ -41,8 +41,8 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: themccli_ride4cure
+  database: ride4thecure
   pool: 5
-  username: themccli_ride
-  password: 53cr3db
+  username: ride
+  password:  
   socket: /var/lib/mysql/mysql.sock
